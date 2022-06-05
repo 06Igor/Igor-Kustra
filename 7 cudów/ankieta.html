@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="PL">
+<head>
+	<meta charset="utf-8">
+	<title>Ankieta</title>
+	<script>
+function WriteText(txt) {document.getElementById("opis").innerHTML = txt;}	
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	
+<div id="navbar">
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+  	<a class="logo navbar-brand" href="#up">Ankieta</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	<span class="navbar-toggler-icon"></span>
+    </button>
+		<div>
+		  <ul class="navbar-nav align-content-end nav-kon">
+			  <li class="nav-item">
+				  <a class="nav-link" href="index.html">Powrót do strony głównej</a>
+			  </li>
+		  </ul>
+	  </div>
+	  </div>  
+	</nav>
+</div>
+	<p id="up"></p>
+	<br>
+	<br>
+	<br>
+	<h1>Ankieta</h1>
+	<div class="text">
+	<p class="text-center">Wypełnij ankietę</p>
+	
+	<form>
+		<label for="imie">Imię:</label><br>
+  			<input type="text" id="imie" name="imie"><br>
+		<label for="nazwisko">Nazwisko:</label><br>
+			<input type="text" id="nazwisko" name="nazwisko">
+		<br>
+		<br>
+		<label for="plec">Wybierz swoją płeć:</label><br>
+			<input type="radio" id="plec" name="plec" value="Mezczyzna">
+			<label for="plec">Mężczyzna</label><br>
+			<input type="radio" id="kobieta" name="plec" value="Kobieta">
+			<label for="kobieta">Kobieta</label><br>
+			<input type="radio" id="inne" name="plec" value="Inne">
+			<label for="inne">Inne</label>
+		<br>
+		<br>
+		<label for="piramida">Który cud świata podobał ci się najbardziej?</label><br>
+  			<input type="radio" id="piramida" name="cud" value="piramida">
+			<label for="piramida">Piramida Cheopsa</label><br>
+			<input type="radio" id="ogrody" name="cud" value="ogrody">
+			<label for="ogrody">Wiszące ogrody Semiramidy</label><br>
+			<input type="radio" id="swiatynia" name="cud" value="swiatynia">
+			<label for="swiatynia">Świątynia Artemidy w Efezie</label><br>
+			<input type="radio" id="zeus" name="cud" value="zeus">
+			<label for="zeus">Posąg Zeusa w Olimpii</label><br>
+			<input type="radio" id="mauzoleum" name="cud" value="mauzoleum">
+			<label for="mauzoleum">Mauzoleum w Halikarnasie</label><br>
+			<input type="radio" id="kolos" name="cud" value="kolos">
+			<label for="kolos">Kolos Rodyjski</label><br>
+			<input type="radio" id="latarnia" name="cud" value="latarnia">
+			<label for="latarnia">Latarnia morska na Faros</label>
+		<br>
+		<br>
+		<label for="opinia">Napisz opinię na temat strony</label><br>
+  			<input type="text" id="opinia" name="opinia">
+		<br>
+		<br>
+		
+		<input type="submit" value="Potwierdź">
+ 		<input type="reset" value="Wyczyść">
+	</form>
+		</div>
+	</body>
+</html>
