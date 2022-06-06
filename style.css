@@ -194,7 +194,7 @@ table {	border-style: solid;
 
 /* Użyj polecenia @media, dla zmiany wyglądu przy szerokości 800px: */
 @media screen and (max-width:800px) {
-  .text {font-size: 200%;}
+  .text {font-size: 10px;}
 	.cialo {margin-right: 5%;
 		margin-left: 5%;}
   .img1 {width: 120%;
