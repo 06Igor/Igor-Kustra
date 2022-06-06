@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'Lato';
+  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+}
+
+body {background-image: linear-gradient(-160deg,#297373,#79E8B5);
+	 background-attachment: fixed;
+	color: Black;
+	font-size: 20px;
+	font-family: 'Lato';
+	font-style: normal;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 2%;
+}
+
+
+h1 {text-align: center;
+	color: #FF8552;
+	font-size: 50px;
+	text-shadow: 5px 2px 15px;}
+
+video {margin-left: auto;
+		margin-right: auto;
+		width: 100%;}
+
+.div1 {position: relative;
+	text-align: center;
+	top: -25px;
+	z-index: 1;
+	color: #39393A;}
+
+
+.div2 {z-index: 2;}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  margin-right: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img1 {
+  width: 60%;
+  height: auto;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 50px;
+  border-color: #FF8552;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.img {
+  width: 80%;
+  height: 40%;
+  border-style: solid;
+  border-width: 25px;
+  border-radius: 50px;
+  border-color: #FF8552;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.logo {text-shadow: 5px 2px 15px;
+		font-size: 30px;}
+
+.nav-kon {font-size: 18px;}
+
+td {border-style: solid;
+	border-color: black;
+	border-width: 2px;}
+
+
+
+table {	border-style: solid;
+		border-color: black;
+		border-width: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+		text-align: center;}
+
+.text {font-size: 110%;}
+
+@media screen and (max-width:1200px) {
+ .text {font-size: 150%;}
+	.img1 {width: 130%;
+		margin-left: auto;
+	  margin-right: auto;}
+	.img {width: 120%;
+		margin-left: auto;
+	  margin-right: auto;
+		border-width: 50px;}
+	.div1 {top: -40px;}
+	
+  }
+
+/* Użyj polecenia @media, dla zmiany wyglądu przy szerokości 800px: */
+@media screen and (max-width:800px) {
+  .text {font-size: 200%;}
+  .img1 {width: 120%;
+		margin-left: auto;
+	  margin-right: auto;}
+	.img {width: 120%;
+		margin-left: auto;
+	  margin-right: auto;
+		border-width: 30px;}
+	.div1 {top: 0px;}
+  }
+
+
