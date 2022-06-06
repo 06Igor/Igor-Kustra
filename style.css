@@ -194,12 +194,12 @@ table {	border-style: solid;
 
 /* Użyj polecenia @media, dla zmiany wyglądu przy szerokości 800px: */
 @media screen and (max-width:800px) {
-  .text {font-size: 15px;}
+  .text {font-size: 20px;}
 	.cialo {margin-right: 5%;
 		margin-left: 5%;}
   .img1 {width: 120%;
-		margin-left: auto;
-	  margin-right: auto;
+		margin-left: 10px;
+	  margin-right: 10px;
 	 max-width: 700px;}
 	.img {width: 120%;
 		margin-left: auto;
